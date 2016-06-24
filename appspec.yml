@@ -13,6 +13,8 @@ permissions:
        - file
 hooks:
    BeforeInstall:
+    - location: scripts/cleardirectories.sh
+      runas: root
     - location: scripts/installapache.sh
       runas: root
     - location: scripts/startapache.sh
